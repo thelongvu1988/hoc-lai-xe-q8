@@ -423,7 +423,7 @@
     </footer>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbydNTlh3lrE_e7lESlbiXn8MFSFMDcYuqqOnRXeNijMi6X9QK_lWCYDRm3FdWw1Wjy_/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzQgJcXoHaDQ2xRceqjEhD9hZSSqBR7UOUNX9MW5XLwZPGPeF5Bhh7kxreB0xS2wA3U/exec';
         const form = document.forms['submit-to-google-sheet'];
         const loader = document.getElementById('loader');
 
@@ -431,7 +431,6 @@
             e.preventDefault();
             loader.classList.remove('hidden');
 
-            // Gỡ bỏ mode: no-cors để form hoạt động lại bình thường theo luồng gốc
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     loader.classList.add('hidden');
