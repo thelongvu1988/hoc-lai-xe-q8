@@ -25,7 +25,7 @@
             let num = i.toString().padStart(2, '0'); // Định dạng 01, 02... 100
             sliderHTML += `
                 <div class="snap-center shrink-0 w-64 md:w-80 shadow-md rounded-xl bg-white overflow-hidden border border-gray-200">
-                    <img src="picture/${num}.jpg" loading="lazy" alt="Học lái xe hạng thực tế ${num}" class="w-full h-48 md:h-56 object-cover hover:scale-110 transition duration-700 cursor-pointer">
+                    <img src="${num}.jpg" loading="lazy" alt="Học lái xe hạng thực tế ${num}" class="w-full h-48 md:h-56 object-cover hover:scale-110 transition duration-700 cursor-pointer">
                     <p class="text-[11px] text-center text-gray-500 font-semibold p-2 uppercase">Góc Thực Hành ${num}</p>
                 </div>`;
         }
